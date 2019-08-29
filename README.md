@@ -48,3 +48,8 @@ La página `index.html` en el directorio `web02` deberá contener la siguiente i
 </body>
 </html>
 ```
+---
+
+Ya en este momento usted deberá poder ver en su navegador las páginas personalizadas del servidor web `web01` y del servidor web `web02`.
+Ahora lo que se debe de habilitar es la configuración del servicio de HAProxy en la máquina `hap`.
+Para llevar a cabo esta **configuración** deberá seguir los pasos que están en la [guía de instalación sugerida](https://www.howtoforge.com/tutorial/ubuntu-load-balancer-haproxy/).
