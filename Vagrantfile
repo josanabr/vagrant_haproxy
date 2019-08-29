@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.define "web01" do |web|
-        web.vm.network "private_network", ip: "192.168.200.3"
+        web.vm.network "private_network", ip: "172.19.0.3"
   	web.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '386' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '1' ]
