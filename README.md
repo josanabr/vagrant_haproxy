@@ -16,3 +16,8 @@ Se debe revisar primero como en un Vagrantfile se puede asignar un IP privado a 
 **El profesor debe indicar cuales son los IPs que asignará a cada una de las máquinas definidas en el Vagrantfile**.
 
 ---
+
+Modifique el `Vagrantfile` de modo que se lleve a cabo la instalación de los siguientes paquetes:
+
+* `web01` y `web02` el servidor web de Apache.
+* `hap` el aplicativo haproxy.
