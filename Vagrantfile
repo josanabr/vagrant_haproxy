@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "web01" do |web|
         web.vm.network "private_network", ip: "192.168.200.3"
         web.vm.provision "shell", path: "web.sh"
-        web.vm.synced_folder "web01", "/var/www"
+        web.vm.synced_folder "./web01", "/var/www"
   	web.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '386' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '1' ]
@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "web02" do |web|
         web.vm.network "private_network", ip: "192.168.200.4"
         web.vm.provision "shell", path: "web.sh"
-        web.vm.synced_folder "web02", "/var/www"
+        web.vm.synced_folder "./web02", "/var/www/html"
   	web.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '386' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '1' ]
