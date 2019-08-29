@@ -54,4 +54,19 @@ Ya en este momento usted deberá poder ver en su navegador las páginas personal
 Ahora lo que se debe de habilitar es la configuración del servicio de HAProxy en la máquina `hap`.
 Para llevar a cabo esta **configuración** deberá seguir los pasos que están en la [guía de instalación sugerida](https://www.howtoforge.com/tutorial/ubuntu-load-balancer-haproxy/).
 
+**Nota** Hay un error en el archivo de configuración sugerido por la página web. 
+Existe una línea que dice:
+
+```
+listen webfarm 0.0.0.0:80
+```
+
+Esta se debe cambiar por estas dos:
+
+```
+listen webfarm 
+bind 0.0.0.0:80
+```
+
 Una vez la configuración este lista, asegurarse que se puede hacer el acceso al servidor de HAProxy desde el número IP del *host*.
+
