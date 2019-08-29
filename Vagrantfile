@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ESCRIBA_EL_BOX"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.define "web01" do |web|
   	web.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '386' ]
