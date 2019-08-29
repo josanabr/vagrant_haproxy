@@ -14,3 +14,5 @@ Modifique el `Vagrantfile` de modo que las máquinas virtuales tengan un [IP pri
 Se debe revisar primero como en un Vagrantfile se puede asignar un IP privado a una máquina virtual, [enlace](https://www.vagrantup.com/docs/networking/private_network.html#static-ip).
 
 **El profesor debe indicar cuales son los IPs que asignará a cada una de las máquinas definidas en el Vagrantfile**.
+
+---
