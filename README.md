@@ -21,3 +21,30 @@ Modifique el `Vagrantfile` de modo que se lleve a cabo la instalación de los si
 
 * `web01` y `web02` el servidor web de Apache.
 * `hap` el aplicativo haproxy.
+
+---
+
+En este punto ya se tienen scripts para hacer la instalación del software en `web01`, `web02` y `hap`.
+De hecho, hacer el despliegue de `web01` e ir al navegador de tu computador e ir a la dirección IP que dió el profesor para ese equipo y con esa info ya podrás acceder al servidor web de la máquina virtual.
+
+Ahora lo que debes hacer es que las páginas web de `web01` y `web02` se encuentren en directorios llamados `web01` y `web02` respectivamente.
+Es decir, deseamos que se tengan páginas web personalizadas.
+La página `index.html` en el directorio `web01` deberá contener la siguiente información:
+
+```
+<html>
+<body>
+<h1 alight=center> Hola Mundo </h1>
+</body>
+</html>
+```
+
+La página `index.html` en el directorio `web02` deberá contener la siguiente información:
+
+```
+<html>
+<body>
+<h1 alight=center> Hello World </h1>
+</body>
+</html>
+```
