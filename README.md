@@ -6,7 +6,7 @@ Modifique el `Vagrantfile` de modo que las máquinas virtuales se creen con el s
 
 ---
 
-En este paso usted debió modificar el [Vagrantfile](Vagrantfile) de modo que se indica que el box que se va a usar es `ubuntu/trusty64`. 
+En este paso usted debió modificar el [Vagrantfile](Vagrantfile) de modo que se indica que el box que se va a usar es `ubuntu/xenial64`. 
 Ese es el box que indica el artículo que se sigue como guía para instalar HAProxy.
 
 Modifique el `Vagrantfile` de modo que las máquinas virtuales tengan un [IP privado](https://whatismyipaddress.com/private-ip).
