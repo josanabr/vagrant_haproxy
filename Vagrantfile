@@ -26,6 +26,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "haproxy" do |hap|
         hap.vm.network "private_network", ip: "192.168.200.5"
         hap.vm.provision "shell", path: "haproxy.sh"
+        hap.vm.network "forwarded_port", guest: 80, host: 8080
   	hap.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '386' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '1' ]
